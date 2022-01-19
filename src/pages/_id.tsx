@@ -86,7 +86,7 @@ const Id = () => {
     return (
       <div className="container py-5">
         <div className="row justify-content-center">
-          <div className="col-4 row text-center">
+          <div className="col-md-4 row text-center">
             <img className="img-fluid mb-3" src={img} alt={data.name} />
             <h1 className="mb-3" style={{ textTransform: "capitalize" }}>
               {data.name}
@@ -97,7 +97,7 @@ const Id = () => {
                   <div
                     style={{ textTransform: "capitalize" }}
                     key={index}
-                    className="rounded-pill px-4 py-2 shadow border border-warning fs-5 me-3"
+                    className="rounded-pill px-4 py-2 shadow border border-warning fs-5 m-2"
                   >
                     {item.type.name}
                   </div>
@@ -105,20 +105,20 @@ const Id = () => {
               </div>
             </div>
           </div>
-          <div className="col-6 text-center">
-            <h2>Moves</h2>
+          <div className="col-md-8 col-lg-6 text-center">
+            <h2 className="mt-5 mt-md-0">Moves</h2>
             <div className="row justify-content-center">
               {moves.map((item: any, index: number) => (
                 <div
                   key={index}
-                  className="col-4 rounded-pill m-3 px-4 py-2 shadow border border-success fs-5"
+                  className="col-5 col-lg-4 rounded-pill m-3 px-4 py-2 shadow border border-success fs-5"
                   style={{ textTransform: "capitalize" }}
                 >
                   {item.move.name}
                 </div>
               ))}
               <div className="row justify-content-center mt-5">
-                <div className="col-4">
+                <div className="col-6 col-md-4">
                   <img
                     className={`${
                       isLoading ? "App-logo img-fluid mb-3" : "img-fluid mb-3"

@@ -33,12 +33,12 @@ const Pokedek = () => {
   if (isReady) {
     return (
       <div className="container text-center">
-        <h2>My Pokemon</h2>
+        <h2 className="mt-4 mt-md-0">My Pokemon</h2>
         <div className="row my-5 justify-content-center">
           {poke.map((item: any, index: number) => (
             <div
               key={index}
-              className="col-3 d-flex align-items-center m-2 py-3 px-4 rounded-pill shadow"
+              className="col-9 col-md-5 col-lg-3 d-flex align-items-center m-2 py-3 px-4 rounded-pill shadow"
             >
               <img src={item.img} alt="pic" height="80" width="80" />
               <div className="text-start">

@@ -19,14 +19,14 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-white">
       <div className="container">
-        <a className="navbar-brand fs-3 fw-bold" href="/">
+        <NavLink className="navbar-brand fs-3 fw-bold" to="/">
           <Image
             src="https://cdn.worldvectorlogo.com/logos/pokemon-23.svg"
             className="me-3"
             alt="logo"
             height="80"
           />
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler btn"
           type="button"

@@ -91,7 +91,7 @@ const Index = () => {
           {poke.map((item: any, index) => (
             <div
               key={index}
-              className="col-3 d-flex align-items-center m-2 py-3 px-4 rounded-pill shadow"
+              className="col-9 col-md-5 col-lg-3 d-flex justify-content-center align-items-center m-2 py-3 px-4 rounded-pill shadow"
             >
               <img
                 src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${item.url
@@ -104,7 +104,7 @@ const Index = () => {
               <p
                 className="fs-5 ms-3 mb-0"
                 onClick={() => handleDetail(item)}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", textTransform: "capitalize" }}
               >
                 {item.name}
                 <BsChevronRight className="ms-3" />
@@ -115,7 +115,7 @@ const Index = () => {
             className={`${
               searchValue
                 ? "d-none"
-                : "col-3 d-flex align-items-center justify-content-center m-2 py-3 px-4 rounded-pill shadow"
+                : "col-9 col-md-5 col-lg-3 d-flex align-items-center justify-content-center m-2 py-3 px-4 rounded-pill shadow"
             }`}
           >
             <p
